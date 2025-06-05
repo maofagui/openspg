@@ -1,6 +1,6 @@
 actor_rollout_ref:
   model:
-    path: /dnn_training_sys/users/hanxudong.hxd/OpenRLHF/Llama-3-8b-sft-mixture
+    path: /input/Llama-3-8b-sft-mixture
     enable_gradient_checkpointing: True
   strategy: deepspeed  # This is for backward-compatibility
   rollout_batch_size: 128
@@ -85,6 +85,6 @@ placement:
   strategy: flattening
 
 data:
-  prompt_data_path: /dnn_training_sys/users/hanxudong.hxd/prompt-collection-v0.1/data
-  prompt_template: /input/jiulin.jl/code/orz_base_template
+  prompt_data_path: /input/data
+  prompt_template: /input/orz_base_template
   num_total_iters: 1
